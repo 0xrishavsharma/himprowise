@@ -6,9 +6,9 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className='bg-dark-lighter/90 backdrop-blur-sm fixed z-50 w-full'>
+        <header className='bg-dark-lighter/90 fixed z-50 w-full backdrop-blur-sm'>
             <div className='sm:px-6 lg:px-8 container px-4 mx-auto'>
-                <div className='flex items-center justify-between py-4'>
+                <div className='flex justify-between items-center py-4'>
                     {/* Logo */}
                     <div className='flex items-center'>
                         <Link href='/' className='flex items-center'>
@@ -33,28 +33,10 @@ const Header = () => {
                             Services
                         </Link>
                         <Link
-                            href='#initiatives'
-                            className='hover:text-primary text-white transition-colors'
-                        >
-                            Initiatives
-                        </Link>
-                        <Link
-                            href='#impact'
-                            className='hover:text-primary text-white transition-colors'
-                        >
-                            Impact
-                        </Link>
-                        <Link
                             href='#team'
                             className='hover:text-primary text-white transition-colors'
                         >
                             Team
-                        </Link>
-                        <Link
-                            href='#contact'
-                            className='hover:text-primary text-white transition-colors'
-                        >
-                            Contact
                         </Link>
                     </nav>
 
@@ -126,39 +108,11 @@ const Header = () => {
                                 Services
                             </Link>
                             <Link
-                                href='#initiatives'
-                                className='hover:text-primary text-white transition-colors'
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Initiatives
-                            </Link>
-                            <Link
-                                href='#impact'
-                                className='hover:text-primary text-white transition-colors'
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Impact
-                            </Link>
-                            <Link
                                 href='#team'
                                 className='hover:text-primary text-white transition-colors'
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Team
-                            </Link>
-                            <Link
-                                href='#contact'
-                                className='hover:text-primary text-white transition-colors'
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Contact
-                            </Link>
-                            <Link
-                                href='#contact'
-                                className='btn-primary inline-block text-center'
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Get Involved
                             </Link>
                         </nav>
                     </div>
