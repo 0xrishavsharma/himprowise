@@ -11,10 +11,11 @@ const Header = () => {
                 <div className='flex justify-between items-center py-4'>
                     {/* Logo */}
                     <div className='flex items-center'>
-                        <Link href='/' className='flex items-center'>
+                        <Link href='/' className='flex gap-1 items-baseline'>
                             <span className='text-2xl font-bold text-white'>
-                                Himprowise
+                                Himprowise{" "}
                             </span>
+                            <span className='w-1.5 h-1.5 bg-green-600 rounded-full'></span>
                         </Link>
                     </div>
 
